@@ -26,3 +26,41 @@ body {
     background-attachment: fixed;
     color: var(--text-main);
 }
+/* --- ESTILOS HEADER --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 8%;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--glass-border);
+    position: sticky;
+    top: 0;
+}
+.logo {
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.logo span {
+    background: linear-gradient(90deg, var(--accent-violet), var(--accent-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.nav a:hover {
+    color: var(--text-main);
+}
+.nav .nav-btn {
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    border: 1px solid var(--accent-cyan);
+    color: var(--accent-cyan);
+}
