@@ -8,175 +8,173 @@
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:
-    "Segoe UI",
-    system-ui,
-    -apple-system,
-    sans-serif;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
 }
+
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--bg-dark);
-    background-image: 
-        radial-gradient(circle at 15% 20%, rgba(139, 92, 246, 0.22) 0%, transparent 45%),
-        radial-gradient(circle at 85% 60%, rgba(6, 182, 212, 0.18) 0%, transparent 45%),
-        radial-gradient(circle at 50% 95%, rgba(245, 158, 11, 0.12) 0%, transparent 40%);
-    background-attachment: fixed;
-    color: var(--text-main);
-}
-/* --- ESTILOS HEADER --- */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.2rem 8%;
-    background: var(--glass-bg);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--glass-border);
-    position: sticky;
-    top: 0;
-}
-.logo {
-    font-size: 1.6rem;
-    font-weight: 800;
-    letter-spacing: 1px;
-}
-.logo span {
-    background: linear-gradient(90deg, var(--accent-violet), var(--accent-cyan));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.nav a {
-    color: var(--text-muted);
-    text-decoration: none;
-    margin-left: 2rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-.nav a:hover {
-    color: var(--text-main);
-}
-.nav .nav-btn {
-    padding: 0.5rem 1.2rem;
-    border-radius: 20px;
-    border: 1px solid var(--accent-cyan);
-    color: var(--accent-cyan);
-.principal {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 4rem 8%;
-    gap: 3rem;
-}
-.hero {
-    max-width: 600px;
-}
-.badge {
-    display: inline-block;
-    padding: 0.4rem 1rem;
-    border-radius: 50px;
-    background: rgba(139, 92, 246, 0.15);
-    border: 1px solid var(--accent-violet);
-    color: #C4B5FD;
-    font-size: 0.85rem;
-    margin-bottom: 1.5rem;
-}
-.hero h1 {
-    font-size: 3.2rem;
-    line-height: 1.15;
-    margin-bottom: 1.2rem;
-    background: linear-gradient(135deg, #FFFFFF 30%, var(--accent-cyan) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.hero p {
-    color: var(--text-muted);
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-}
-.hero-actions {
-    display: flex;
-    gap: 1rem;
-}
-.btn-primary {
-    padding: 0.9rem 2rem;
-    border: none;
-    border-radius: 10px;
-    background: linear-gradient(135deg, var(--accent-violet), var(--accent-cyan));
-    color: white;
-    font-weight: 600;
-    cursor: pointer;
-    box-shadow: 0 8px 20px rgba(6, 182, 212, 0.25);
-}
-.btn-secondary {
-    padding: 0.9rem 2rem;
-    border-radius: 10px;
-    background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
-    color: var(--text-main);
-    cursor: pointer;
-}
-.glass-card {
-    padding: 2rem;
-    border-radius: 16px;
-    background: linear-gradient(145deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02));
-    border: 1px solid var(--glass-border);
-    backdrop-filter: blur(16px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-}
-.status-ok {
-    color: #34D399;
-    margin: 0.8rem 0;
-    font-weight: 600;
-}
-.glass-card code {
-    display: block;
-    padding: 0.6rem 1rem;
-    background: rgba(0,0,0,0.4);
-    border-radius: 6px;
-    color: var(--accent-gold);
-}
-@media (max-width: 768px) {
-    .principal { flex-direction: column; text-align: center; }
-    .hero-actions { justify-content: center; }
-}
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: var(--bg-dark);
-  background-image:
-    radial-gradient(
-      circle at 15% 20%,
-      rgba(139, 92, 246, 0.22) 0%,
-      transparent 45%
-    ),
-    radial-gradient(
-      circle at 85% 60%,
-      rgba(6, 182, 212, 0.18) 0%,
-      transparent 45%
-    ),
-    radial-gradient(
-      circle at 50% 95%,
-      rgba(245, 158, 11, 0.12) 0%,
-      transparent 40%
-    );
+  background-image: 
+    radial-gradient(circle at 15% 20%, rgba(139, 92, 246, 0.22) 0%, transparent 45%),
+    radial-gradient(circle at 85% 60%, rgba(6, 182, 212, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 50% 95%, rgba(245, 158, 11, 0.12) 0%, transparent 40%);
   background-attachment: fixed;
   color: var(--text-main);
 }
+
+/* --- ESTILOS HEADER --- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 8%;
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--glass-border);
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  background: linear-gradient(90deg, var(--accent-violet), var(--accent-cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  margin-left: 2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: var(--text-main);
+}
+
+.nav .nav-btn {
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  border: 1px solid var(--accent-cyan);
+  color: var(--accent-cyan);
+} /* LLAVE CERRADA CORRECTAMENTE AQUÍ */
+
+/* --- ESTILOS PRINCIPAL --- */
+.principal {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 8%;
+  gap: 3rem;
+}
+
+.hero {
+  max-width: 600px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  background: rgba(139, 92, 246, 0.15);
+  border: 1px solid var(--accent-violet);
+  color: #C4B5FD;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  line-height: 1.15;
+  margin-bottom: 1.2rem;
+  background: linear-gradient(135deg, #FFFFFF 30%, var(--accent-cyan) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent-violet), var(--accent-cyan));
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(6, 182, 212, 0.25);
+}
+
+.btn-secondary {
+  padding: 0.9rem 2rem;
+  border-radius: 10px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--text-main);
+  cursor: pointer;
+}
+
+.glass-card {
+  padding: 2rem;
+  border-radius: 16px;
+  background: linear-gradient(145deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02));
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.status-ok {
+  color: #34D399;
+  margin: 0.8rem 0;
+  font-weight: 600;
+}
+
+.glass-card code {
+  display: block;
+  padding: 0.6rem 1rem;
+  background: rgba(0,0,0,0.4);
+  border-radius: 6px;
+  color: var(--accent-gold);
+}
+
+@media (max-width: 768px) {
+  .principal { flex-direction: column; text-align: center; }
+  .hero-actions { justify-content: center; }
+}
+
+/* --- ESTILOS FOOTER --- */
 .footer {
   background: rgba(5, 7, 12, 0.85);
   border-top: 1px solid var(--glass-border);
   padding: 2.5rem 8% 1.5rem;
   margin-top: auto;
 }
+
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -186,14 +184,17 @@ body {
   padding-bottom: 1.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
+
 .footer h3 {
   color: var(--accent-gold);
   margin-bottom: 0.4rem;
 }
+
 .footer p {
   color: var(--text-muted);
   font-size: 0.9rem;
 }
+
 .footer-social a {
   color: var(--text-main);
   text-decoration: none;
@@ -204,6 +205,7 @@ body {
   border: 1px solid var(--glass-border);
   font-size: 0.85rem;
 }
+
 .footer-bottom {
   text-align: center;
   padding-top: 1.2rem;
